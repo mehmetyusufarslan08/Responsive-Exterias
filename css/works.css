@@ -1,0 +1,112 @@
+/* CAROUSEL (SLİDE) AREA */
+
+div.slider {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nasa.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+/* WORKS CONTENT */
+
+.container {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row .abautcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    row-gap: 20px;
+    padding: 0 30px;
+}
+
+.abautcard h2 {
+    color: #e74c3c;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+.abautcard hr {
+    width: 50%;
+    border-color: #e74c3c;
+}
+
+.abautcard p {
+    color: rgb(175, 174, 174);
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.rowimg {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.rowimg img {
+    width: calc(80% / 3);
+    max-height: 200px;
+    filter: brightness(.4);
+    transition: .5s;
+}
+
+.rowimg img:hover {
+    transform: scale(1.2);
+    filter: brightness(1);
+}
+
+
+/* RESPONSIVE AREA */
+
+@media (max-width: 768px) {
+    .rowimg img {
+        filter: brightness(1) !important;
+    }
+}
+
+@media (max-width:576px) {
+    .rowimg {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .rowimg img {
+        width: 100%;
+        margin: 0 !important;
+        filter: brightness(1);
+    }
+    .abautcard h2 {
+        text-align: center;
+    }
+    .row .abautcard {
+        width: 100%;
+    }
+}

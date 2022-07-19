@@ -1,0 +1,176 @@
+/* CAROUSEL (SLİDE) AREA */
+
+div.slider {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/abaut.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+/* ABAUT CONTENT */
+
+.container {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+}
+
+.row .abautcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    row-gap: 20px;
+    padding: 0 30px;
+    background-color: #fafafa;
+}
+
+.abautcard h2 {
+    color: #e74c3c;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+.abautcard hr {
+    width: 25%;
+    border-color: #e74c3c;
+}
+
+.abautcard p {
+    color: rgb(175, 174, 174);
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.abautcard a {
+    text-decoration: none;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    display: inline-block;
+    width: min-content;
+    padding: 15px 30px;
+    transition: all .5s;
+}
+
+.abautcard a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.rowimg {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.rowimg hr {
+    border-color: #e74c3c !important;
+    width: 25%;
+}
+
+.rowimg h2 {
+    color: #e74c3c;
+    font-weight: 300;
+    letter-spacing: 1.2;
+    text-align: center;
+}
+
+.row img {
+    width: 50%;
+    height: 10%;
+}
+
+.rowimg {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img img {
+    width: calc(90% / 4);
+}
+
+
+/* RESPONSIVE AREA */
+
+@media (max-width:1040px) {
+    .abautcard p {
+        line-height: 20px;
+    }
+}
+
+@media(max-width:962px) {
+    .row .abautcard {
+        row-gap: 15px;
+    }
+    .abautcard p {
+        font-size: 14px;
+    }
+    .abautcard a {
+        padding: 10px 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .row .abautcard {
+        width: 100%;
+        row-gap: 25px;
+    }
+    .row img {
+        width: 100%;
+    }
+    .abautcard p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:576px) {
+    .slider h2 {
+        font-size: 50px;
+    }
+    .slider .butonlar {
+        flex-direction: column;
+    }
+    .rowimg .img {
+        flex-direction: column !important;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .rowimg .img {
+        margin: 0 20px;
+    }
+    .rowimg .img img {
+        width: 100%;
+    }
+}

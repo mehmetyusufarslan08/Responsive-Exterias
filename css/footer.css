@@ -1,0 +1,351 @@
+/* FOOTER AREA */
+
+
+/* MENU AREA */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    padding: 20px 80px;
+    margin-top: 50px;
+}
+
+footer div {
+    width: 100%;
+}
+
+footer div.menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    border-left: 4px solid darkturquoise;
+    padding-left: 15px;
+    transition: .5s;
+}
+
+footer div.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div.menu ul li {
+    border-bottom: 1px solid white;
+    transition: .5s;
+}
+
+footer div.menu ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 0 !important;
+    display: inline-block;
+    transition: .5s;
+}
+
+footer .menu a:hover,
+footer div a:hover {
+    color: #e74c3c;
+}
+
+footer h2 a:hover {
+    border-color: #e74c3c;
+}
+
+footer .menu ul li:hover {
+    padding-left: 10px;
+}
+
+
+/* SOCIAL MEDIA ICONS */
+
+footer div.sosyal {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 0 40px;
+}
+
+footer .sosyal .iconlar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div.sosyal div.iconlar a {
+    border: 1px solid white;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+footer div.sosyal div.iconlar a i {
+    color: white;
+    font-size: 30px;
+    transition: .5s;
+}
+
+footer .sosyal .iconlar a:hover {
+    margin-top: -3px;
+}
+
+footer .sosyal .iconlar a:nth-child(1):hover {
+    border: 1px solid blue;
+}
+
+.sosyal .iconlar a:nth-child(1):hover i {
+    color: blue;
+}
+
+footer .sosyal .iconlar a:nth-child(2):hover {
+    border: 1px solid aqua;
+}
+
+.sosyal .iconlar a:nth-child(2):hover i {
+    color: aqua;
+}
+
+footer .sosyal .iconlar a:nth-child(3):hover {
+    border: 1px solid #e1595f;
+}
+
+.sosyal .iconlar a:nth-child(3):hover i {
+    color: #e1595f;
+}
+
+footer .sosyal .iconlar a:nth-child(4):hover {
+    border: 1px solid orangered;
+}
+
+.sosyal .iconlar a:nth-child(4):hover i {
+    color: orangered;
+}
+
+footer .sosyal .iconlar a:nth-child(5):hover {
+    border: 1px solid #26e03b;
+}
+
+.sosyal .iconlar a:nth-child(5):hover i {
+    color: #26e03b;
+}
+
+footer .sosyal .iconlar a:nth-child(6):hover {
+    border: 1px solid #d8090d;
+}
+
+.sosyal .iconlar a:nth-child(6):hover i {
+    color: #d8090d;
+}
+
+footer .sosyal .iconlar a:nth-child(7):hover {
+    border: 1px solid deeppink;
+}
+
+.sosyal .iconlar a:nth-child(7):hover i {
+    color: deeppink;
+}
+
+footer .sosyal .iconlar a:nth-child(8):hover {
+    border: 1px solid turquoise;
+}
+
+.sosyal .iconlar a:nth-child(8):hover i {
+    color: turquoise;
+}
+
+
+/* INSTAGRAM AREA */
+
+footer .instagram {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+footer .instagram .ins-img div {
+    display: flex;
+}
+
+footer .instagram .ins-img div:first-child img {
+    width: calc(100% / 2 - 5px);
+    margin: 0 5px 5px 0;
+}
+
+footer .instagram .ins-img div:last-child img {
+    width: calc(100% / 4 - 5px);
+    margin: 5px 5px 5px 0;
+}
+
+footer .instagram img {
+    filter: opacity(.5);
+    transition: .5s;
+}
+
+footer .instagram img:hover {
+    filter: opacity(1);
+}
+
+
+/* CONTACT AREA */
+
+div.iletisim {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding-left: 40px;
+}
+
+div.iletisim span {
+    color: white;
+    font-style: normal;
+}
+
+div.iletisim div.icerik {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+div.icerik address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.icerik address span:last-child {
+    text-transform: capitalize;
+}
+
+div.icerik address span>span {
+    text-transform: uppercase !important;
+}
+
+address span:first-child,
+div.tel span:first-child,
+div.email span:first-child {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+div.tel {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.email {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.icerik>div:nth-child(1) {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.icerik>div:nth-child(2) {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.icerik>div:nth-child(3) {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.icerik i {
+    border: 1px solid white;
+    width: 50px !important;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.icerik i:hover {
+    color: #e74c3c;
+}
+
+
+/* RESPONSIVE AREA */
+
+@media (max-width:1040px) {
+    footer div.sosyal div.iconlar a {
+        width: 40px;
+        height: 40px;
+    }
+    footer div.sosyal div.iconlar a i {
+        font-size: 20px;
+    }
+    footer .iletisim .icerik i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    footer {
+        flex-wrap: wrap;
+        padding: 20px 50px;
+    }
+    footer .menu,
+    .sosyal,
+    .instagram,
+    .iletisim {
+        width: 50%;
+    }
+    .instagram,
+    .iletisim {
+        margin-top: 30px;
+    }
+    footer div.sosyal div.iconlar a {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:576px) {
+    footer {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    footer div.sosyal {
+        width: 100%;
+        padding: 0;
+    }
+    footer div.sosyal div.iconlar a {
+        width: 60px;
+        height: 60px;
+    }
+    footer div.menu {
+        width: 100%;
+    }
+    footer div.instagram {
+        margin-top: 0;
+        width: 100%;
+    }
+    footer div.iletisim {
+        margin: 0;
+        padding: 0;
+    }
+}
